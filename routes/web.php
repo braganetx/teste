@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('veiculos', 'VeiculoController');
+
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -31,6 +33,4 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
     $this->post('password/reset','Auth\ResetPasswordController@reset');
 
     Route::get('/home', 'HomeController@index')->name('home');
-
-
 });
