@@ -12,6 +12,6 @@ class Veiculo extends Model
         'modelo',
         'marca',
         'ano',
-        'proprietário'
+        'proprietario'
     ];
 }

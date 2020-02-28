@@ -41,8 +41,8 @@
                     <input type="text" class="form-control" name="ano" value={{ $veiculo->ano }} />
                 </div>
                 <div class="form-group">
-                    <label for="proprietário">Proprietário:</label>
-                    <input type="text" class="form-control" name="proprietário" value={{ $veiculo->proprietário }} />
+                    <label for="proprietario">Proprietário:</label>
+                    <input type="text" class="form-control" name="proprietario" value={{ $veiculo->proprietario }} />
                 </div>
                 <button type="submit" class="btn btn-primary">Atualizar</button>
             </form>

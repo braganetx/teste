@@ -44,7 +44,7 @@ class VeiculoController extends Controller
             'modelo' => 'required',
             'marca' => 'required',
             'ano' => 'required',
-            'proprietário' => 'required'
+            'proprietario' => 'required'
         ]);
 
         $veiculo = new Veiculo([
@@ -53,7 +53,7 @@ class VeiculoController extends Controller
             'modelo' => $request->get('modelo'),
             'marca' => $request->get('marca'),
             'ano' => $request->get('ano'),
-            'proprietário' => $request->get('proprietário')
+            'proprietario' => $request->get('proprietario')
         ]);
         $veiculo->save();
         return redirect('/veiculos')->with('success', 'Veiculo Salvo com Sucesso!');
@@ -98,7 +98,7 @@ class VeiculoController extends Controller
             'modelo' => 'required',
             'marca' => 'required',
             'ano' => 'required',
-            'proprietário' => 'required'
+            'proprietario' => 'required'
         ]);
 
         $veiculo = Veiculo::find($id);

@@ -13,7 +13,7 @@
         <div class="col-sm-12">
             <h1 class="display-3">Veiculos</h1>
             <div>
-                <a style="margin: 19px;" href="{{ route('veiculo.create')}}" class="btn btn-primary">Novo Veiculo</a>
+                <a style="margin: 19px;" href="{{ route('veiculos.create')}}" class="btn btn-primary">Novo Veículo</a>
             </div>
             <table class="table table-striped">
                 <thead>
@@ -37,12 +37,12 @@
                         <td>{{$veiculo->modelo}}</td>
                         <td>{{$veiculo->marca}}</td>
                         <td>{{$veiculo->ano}}</td>
-                        <td>{{$veiculo->proprietário}}</td>
+                        <td>{{$veiculo->proprietario}}</td>
                         <td>
                             <a href="{{ route('veiculos.edit',$veiculo->id)}}" class="btn btn-primary">Editar</a>
                         </td>
                         <td>
-                            <form action="{{ route('$veiculos.destroy', $veiculo->id)}}" method="post">
+                            <form action="{{ route('veiculos.destroy', $veiculo->id)}}" method="post">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-danger" type="submit">Deletar</button>

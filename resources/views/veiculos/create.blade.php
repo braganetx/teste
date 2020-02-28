@@ -1,5 +1,4 @@
 @extends('base')
-
 @section('main')
     <div class="row">
         <div class="col-sm-8 offset-sm-2">
@@ -14,7 +13,7 @@
                         </ul>
                     </div><br />
                 @endif
-                <form method="post" action="{{ route('veiculo.store') }}">
+                <form method="post" action="{{ route('veiculos.store') }}">
                     @csrf
                     <div class="form-group">
                         <label for="placa">Placa:</label>
